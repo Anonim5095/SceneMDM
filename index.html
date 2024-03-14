@@ -17,6 +17,7 @@
             color: #fff;
             text-align: center;
             padding: 20px 0;
+            margin-bottom: 20px;
         }
         h1 {
             margin: 0;
@@ -24,20 +25,23 @@
         }
         section {
             padding: 20px;
-            margin: 20px 0;
+            margin: 0 auto 20px;
+            max-width: 800px;
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        #teaser-image img {
+        section img {
+            display: block;
+            margin: 0 auto;
             max-width: 100%;
             height: auto;
             border-radius: 5px;
         }
-        #video {
+        section h2 {
             text-align: center;
         }
-        #abstract p {
+        section p {
             text-align: justify;
         }
         #github-link {
@@ -54,14 +58,14 @@
         <h1>SceneMDM: Harnessing Scene Interactions with Affordances for Text-to-Motion</h1>
     </header>
     <section id="teaser-image">
-        <img src="teaser_image.jpg" alt="Teaser Image">
+        <img src="images/results.gif" alt="Teaser Image">
     </section>
-    <section id="video">
+    <!-- <section id="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+    </section> -->
     <section id="abstract">
         <h2>Abstract</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis sit amet nunc convallis posuere. Integer eget nisi at dui hendrerit sodales. Sed porttitor mauris eget odio consequat, non hendrerit libero posuere. Nullam a justo vitae felis gravida dapibus. Nam et vestibulum lacus, eget viverra nisi. Nulla facilisi. Phasellus vel turpis non urna aliquet aliquam. Nullam at erat magna. Fusce at nulla nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec bibendum orci. Curabitur et consequat quam. Donec dignissim fermentum tortor, eu sollicitudin lorem fermentum at. Nam ut vehicula nisi. Fusce id purus et magna interdum venenatis.</p>
+        <p>Generating motions within 3D scenes from textual descriptions remains a challenging task due to the necessity of hybrid datasets encompassing text, 3D scenes, and motion. Existing approaches are limited by the lack of diverse action variations and datasets containing interactions between objects and motions. In this study, we propose a novel method to generate motions interacting with objects in the scene by using key poses inferred from textual prompts and human trajectories, where the key poses represent poses indicative of interactions with objects within the scene. Our approach involves generating motion via diffusion model, identifying target objects from text using ChatGPT, placing a key pose which interacts with the object in the scene, and exploring trajectories that pass through the scene. By adhering to this generation process, our method eliminates the necessity for hybrid datasets, requiring only text-motion data for training the motion diffusion model. Consequently, our model trained on diverse action datasets can generate a wide range of motions, addressing the limitations of prior approaches.</p>
     </section>
     <section id="github-link">
         <p>Find the project on GitHub: <a href="https://github.com/yourusername/yourrepository">SceneMDM GitHub Repository</a></p>
