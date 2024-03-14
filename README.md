@@ -6,7 +6,7 @@ The official PyTorch implementation of the paper [**"Harnessing Scene Interactio
 
 <!-- Please visit our [**webpage**](https://priormdm.github.io/priorMDM-page/) for more details. -->
 
-![teaser](./images/wash_in_sink.gif)
+<img src="./images/results.gif" width="800">
 
 <!-- #### Bibtex
 If you find this code useful in your research, please cite:
@@ -25,7 +25,7 @@ If you find this code useful in your research, please cite:
 
 This code was tested on `Ubuntu 18.04.5 LTS` and requires:
 
-* Python 3.8
+* Python 3.9
 * conda3 or miniconda3
 * CUDA capable GPU (one is enough)
 
@@ -125,9 +125,9 @@ This code should produce a file named `eval_humanml_root_horizontal_finetuned_00
 This code is standing on the shoulders of giants. We want to thank the following contributors
 that our code is based on:
 
-[PriorMDM](https://github.com/priorMDM/priorMDM)
+[PriorMDM](https://github.com/priorMDM/priorMDM),
 [MDM](https://github.com/GuyTevet/motion-diffusion-model),
-[POSA](https://github.com/mohamedhassanmus/POSA)
+[POSA](https://github.com/mohamedhassanmus/POSA),
 [guided-diffusion](https://github.com/openai/guided-diffusion), 
 [MotionCLIP](https://github.com/GuyTevet/MotionCLIP), 
 [text-to-motion](https://github.com/EricGuo5513/text-to-motion), 
