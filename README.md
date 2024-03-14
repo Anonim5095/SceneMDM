@@ -91,34 +91,21 @@ cp -r ../HumanML3D/HumanML3D ./dataset/HumanML3D
 
 ### 4. Download the pretrained models
 
-Download the model(s) you wish to use, then unzip and place it in `./save/`.
+Comming soon.
+
+<!-- Download the model(s) you wish to use, then unzip and place it in `./save/`.
 
 <details>
   <summary><b>DoubleTake (long motions)</b></summary>
 
 * [my_humanml-encoder-512](https://drive.google.com/file/d/1RCqyKfj7TLSp6VzwrKa84ldEaXmVma1a/view?usp=share_link) (This is a reproduction of MDM best model without any changes)
 
-</details>
+</details> -->
 
 ## Motion Synthesis 
 
 
 
-</details>
-
-<details>
-
-<summary><b>Fine-tuned motion control</b></summary>
-
-Evaluate the motion control models on the horizontal part of trajectories sampled from the test set of HumanML3D dataset.
-```shell
-python -m eval.eval_finetuned_motion_control --model_path save/root_horizontal_finetuned/model000280000.pt --replication_times 10
-```
-
-This code should produce a file named `eval_humanml_root_horizontal_finetuned_000280000_gscale2.5_mask_root_horizontal_wo_mm.log`, or generally:
-`eval_humanml\_<model_name>\_gscale<guidance_free_scale>\_mask\_<name_of_control_features>_<evaluation_mode>.log`
-
-</details>
 
 ## Acknowledgments
 
